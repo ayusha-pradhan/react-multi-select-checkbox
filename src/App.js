@@ -37,6 +37,18 @@ class App extends Component {
     this.setState({ items: items });
   };
 
+ 
+
+  handleCheckedAll=e=>{
+    const items = Object.assign([], this.state.items);  
+    items.forEach(item =>{
+      if (item.select === true)
+        item.select = e.target.checked
+       
+    })
+    this.setState({ items: items });
+  };
+
   removedItem = (index,e) =>{
     
     const items = Object.assign([],this.state.items);
@@ -65,6 +77,7 @@ class App extends Component {
   // totalChecked() {
   //   return this.state.items.filter(props => props.select).length;
   // };
+  onCheck
 
 
   render() {

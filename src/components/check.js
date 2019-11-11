@@ -1,11 +1,11 @@
 import React from 'react'
 
-export const Check = props => {
+export function Check(props) {
     return (
         <li>
             <input 
             key={props.id} 
-                onChange={props.handleCheckedElement} 
+                onChange={props.handleCheckedAll && props.handleAllChecked} 
             type="checkbox" 
             checked={props.select} 
             value={props.value} /> {props.value}
