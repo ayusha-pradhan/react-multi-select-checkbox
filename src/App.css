@@ -1,6 +1,13 @@
 .App {
-  text-align: center;
+  margin-left: 100px;
+  margin-top: 100px;
+  text-align: left;
 }
+
+ul {
+  list-style: none;
+}
+view raw
 
 .App-logo {
   height: 40vmin;
